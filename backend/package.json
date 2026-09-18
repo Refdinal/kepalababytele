@@ -1,0 +1,22 @@
+{
+  "name": "kepala-babi-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "migrate": "node src/migrations/run.js",
+    "test": "node --test tests/",
+    "simulate": "node scripts/simulateGame.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.0",
+    "express": "^5.2.1",
+    "grammy": "^1.46.0",
+    "pg": "^8.23.0"
+  }
+}
